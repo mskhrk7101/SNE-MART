@@ -28,13 +28,13 @@ $filename_to_save6 = $_FILES['item_image6']['name'];
 // var_dump($size);
 // var_dump($item_status);
 // var_dump($item_color);
-var_dump($filename_to_save2);
-var_dump($filename_to_save3);
-var_dump($filename_to_save4);
-var_dump($filename_to_save5);
-var_dump($filename_to_save6);
+// var_dump($filename_to_save2);
+// var_dump($filename_to_save3);
+// var_dump($filename_to_save4);
+// var_dump($filename_to_save5);
+// var_dump($filename_to_save6);
 
-exit();
+// exit();
 if (
     !isset($_POST['size']) || $_POST['size'] == NULL ||
     !isset($_POST['item_color']) || $_POST['item_color'] == NULL ||
@@ -42,108 +42,143 @@ if (
 ) {
     exit('選択されていません');
 }
+// --------
+$directory_path = 'upload/'; //アップロード先フォルダ(自分で決める)
 
-if (isset($_FILES['item_image2']) && $_FILES['item_image2']['error'] == 0) {
-    $uploaded_file_name = $_FILES['item_image2']['name']; //ファイル名を取得
-    $temp_path = $_FILES['item_image2']['tmp_name']; //tmpフォルダの場所
-    $directory_path = 'upload/'; //アップロード先フォルダ(自分で決める)
-    $extension1 = pathinfo($uploaded_file_name, PATHINFO_EXTENSION);
-    $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension1;
-    $filename_to_save2 = $directory_path . $unique_name;
-    if (is_uploaded_file($temp_path)) {
+$temp_path2 = $_FILES['item_image2']['tmp_name']; //tmpフォルダの場所
+$extension2 = pathinfo($filename_to_save2, PATHINFO_EXTENSION);
+$unique_name2 = date('YmdHis') . md5(session_id()) . "." . $extension2;
+$filename2 = $directory_path . $unique_name2;
+move_uploaded_file($temp_path2, $filename2);
 
-        if (move_uploaded_file($temp_path, $filename_to_save2)) {
-            chmod($filename_to_save2, 0644);
-        } else {
-            exit('ERROR:アップロードできませんでした');
-        }
-    } else {
-        exit('ERROR:画像がありません');
-    }
-} else {
-    exit('error:画像が送信されていません');
-}
-if (isset($_FILES['item_image3']) && $_FILES['item_image3']['error'] == 0) {
-    $uploaded_file_name2 = $_FILES['item_image3']['name']; //ファイル名を取得
-    $temp_path2 = $_FILES['item_image3']['tmp_name']; //tmpフォルダの場所
-    $directory_path2 = 'upload/'; //アップロード先ォルダ(自分で決める)
-    $extension2 = pathinfo($uploaded_file_name2, PATHINFO_EXTENSION);
-    $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
-    $filename_to_save3 = $directory_path2 . $unique_name;
-    if (is_uploaded_file($temp_path2)) {
+$temp_path3 = $_FILES['item_image3']['tmp_name']; //tmpフォルダの場所
+$extension3 = pathinfo($filename_to_save3, PATHINFO_EXTENSION);
+$unique_name3 = date('YmdHis') . md5(session_id()) . "." . $extension3;
+$filename3 = $directory_path . $unique_name3;
+move_uploaded_file($temp_path3, $filename3);
 
-        if (move_uploaded_file($temp_path2, $filename_to_save3)) {
-            chmod($filename_to_save3, 0644);
-        } else {
-            exit('ERROR:アップロードできませんでした');
-        }
-    } else {
-        exit('ERROR:画像がありません');
-    }
-} else {
-    exit('error:画像が送信されていません');
-}
-if (isset($_FILES['item_image4']) && $_FILES['item_image4']['error'] == 0) {
-    $uploaded_file_name3 = $_FILES['item_image4']['name']; //ファイル名を取得
-    $temp_path = $_FILES['item_image4']['tmp_name']; //tmpフォルダの場所
-    $directory_path = 'upload/'; //アップロード先ォルダ(自分で決める)
-    $extension3 = pathinfo($uploaded_file_name3, PATHINFO_EXTENSION);
-    $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
-    $filename_to_save4 = $directory_path . $unique_name;
-    if (is_uploaded_file($temp_path)) {
+$temp_path4 = $_FILES['item_image4']['tmp_name']; //tmpフォルダの場所
+$extension4 = pathinfo($filename_to_save4, PATHINFO_EXTENSION);
+$unique_name4 = date('YmdHis') . md5(session_id()) . "." . $extension4;
+$filename4 = $directory_path . $unique_name4;
+move_uploaded_file($temp_path4, $filename4);
 
-        if (move_uploaded_file($temp_path, $filename_to_save4)) {
-            chmod($filename_to_save4, 0644);
-        } else {
-            exit('ERROR:アップロードできませんでした');
-        }
-    } else {
-        exit('ERROR:画像がありません');
-    }
-} else {
-    exit('error:画像が送信されていません');
-}
-if (isset($_FILES['item_image5']) && $_FILES['item_image5']['error'] == 0) {
-    $uploaded_file_name4 = $_FILES['item_image5']['name']; //ファイル名を取得
-    $temp_path = $_FILES['item_image5']['tmp_name']; //tmpフォルダの場所
-    $directory_path = 'upload/'; //アップロード先ォルダ(自分で決める)
-    $extension4 = pathinfo($uploaded_file_name4, PATHINFO_EXTENSION);
-    $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
-    $filename_to_save5 = $directory_path . $unique_name;
-    if (is_uploaded_file($temp_path)) {
+$temp_path5 = $_FILES['item_image5']['tmp_name']; //tmpフォルダの場所
+$extension5 = pathinfo($filename_to_save5, PATHINFO_EXTENSION);
+$unique_name5 = date('YmdHis') . md5(session_id()) . "." . $extension5;
+$filename5 = $directory_path . $unique_name5;
+move_uploaded_file($temp_path5, $filename5);
 
-        if (move_uploaded_file($temp_path, $filename_to_save5)) {
-            chmod($filename_to_save5, 0644);
-        } else {
-            exit('ERROR:アップロードできませんでした');
-        }
-    } else {
-        exit('ERROR:画像がありません');
-    }
-} else {
-    exit('error:画像が送信されていません');
-}
+$temp_path6 = $_FILES['item_image6']['tmp_name']; //tmpフォルダの場所
+$extension6 = pathinfo($filename_to_save6, PATHINFO_EXTENSION);
+$unique_name6 = date('YmdHis') . md5(session_id()) . "." . $extension6;
+$filename6 = $directory_path . $unique_name6;
+move_uploaded_file($temp_path6, $filename6);
+//-------
 
-if (isset($_FILES['item_image6']) && $_FILES['item_image6']['error'] == 0) {
-    $uploaded_file_name5 = $_FILES['item_image6']['name']; //ファイル名を取得
-    $temp_path = $_FILES['item_image6']['tmp_name']; //tmpフォルダの場所
-    $directory_path = 'upload/'; //アップロード先ォルダ(自分で決める)
-    $extension5 = pathinfo($uploaded_file_name5, PATHINFO_EXTENSION);
-    $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
-    $filename_to_save6 = $directory_path . $unique_name;
-    if (is_uploaded_file($temp_path)) {
 
-        if (move_uploaded_file($temp_path, $filename_to_save6)) {
-            chmod($filename_to_save6, 0644);
-        } else {
-            exit('ERROR:アップロードできませんでした');
-        }
-    } else {
-        exit('ERROR:画像がありません');
-    }
-} else {
-    exit('error:画像が送信されていません');
-}
+
+// if (isset($_FILES['item_image2']) && $_FILES['item_image2']['error'] == 0) {
+//     $uploaded_file_name = $_FILES['item_image2']['name']; //ファイル名を取得
+//     $temp_path = $_FILES['item_image2']['tmp_name']; //tmpフォルダの場所
+//     $directory_path = 'upload/'; //アップロード先フォルダ(自分で決める)
+//     $extension1 = pathinfo($uploaded_file_name, PATHINFO_EXTENSION);
+//     $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension1;
+//     $filename_to_save2 = $directory_path . $unique_name;
+//     if (is_uploaded_file($temp_path)) {
+
+//         if (move_uploaded_file($temp_path, $filename_to_save2)) {
+//             chmod($filename_to_save2, 0644);
+//         } else {
+//             exit('ERROR:アップロードできませんでした');
+//         }
+//     } else {
+//         exit('ERROR:画像がありません');
+//     }
+// } else {
+//     exit('error:画像が送信されていません');
+// }
+// if (isset($_FILES['item_image3']) && $_FILES['item_image3']['error'] == 0) {
+//     $uploaded_file_name2 = $_FILES['item_image3']['name']; //ファイル名を取得
+//     $temp_path2 = $_FILES['item_image3']['tmp_name']; //tmpフォルダの場所
+//     $directory_path2 = 'upload/'; //アップロード先ォルダ(自分で決める)
+//     $extension2 = pathinfo($uploaded_file_name2, PATHINFO_EXTENSION);
+//     $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
+//     $filename_to_save3 = $directory_path2 . $unique_name;
+//     if (is_uploaded_file($temp_path2)) {
+
+//         if (move_uploaded_file($temp_path2, $filename_to_save3)) {
+//             chmod($filename_to_save3, 0644);
+//         } else {
+//             exit('ERROR:アップロードできませんでした');
+//         }
+//     } else {
+//         exit('ERROR:画像がありません');
+//     }
+// } else {
+//     exit('error:画像が送信されていません');
+// }
+// if (isset($_FILES['item_image4']) && $_FILES['item_image4']['error'] == 0) {
+//     $uploaded_file_name3 = $_FILES['item_image4']['name']; //ファイル名を取得
+//     $temp_path = $_FILES['item_image4']['tmp_name']; //tmpフォルダの場所
+//     $directory_path = 'upload/'; //アップロード先ォルダ(自分で決める)
+//     $extension3 = pathinfo($uploaded_file_name3, PATHINFO_EXTENSION);
+//     $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
+//     $filename_to_save4 = $directory_path . $unique_name;
+//     if (is_uploaded_file($temp_path)) {
+
+//         if (move_uploaded_file($temp_path, $filename_to_save4)) {
+//             chmod($filename_to_save4, 0644);
+//         } else {
+//             exit('ERROR:アップロードできませんでした');
+//         }
+//     } else {
+//         exit('ERROR:画像がありません');
+//     }
+// } else {
+//     exit('error:画像が送信されていません');
+// }
+// if (isset($_FILES['item_image5']) && $_FILES['item_image5']['error'] == 0) {
+//     $uploaded_file_name4 = $_FILES['item_image5']['name']; //ファイル名を取得
+//     $temp_path = $_FILES['item_image5']['tmp_name']; //tmpフォルダの場所
+//     $directory_path = 'upload/'; //アップロード先ォルダ(自分で決める)
+//     $extension4 = pathinfo($uploaded_file_name4, PATHINFO_EXTENSION);
+//     $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
+//     $filename_to_save5 = $directory_path . $unique_name;
+//     if (is_uploaded_file($temp_path)) {
+
+//         if (move_uploaded_file($temp_path, $filename_to_save5)) {
+//             chmod($filename_to_save5, 0644);
+//         } else {
+//             exit('ERROR:アップロードできませんでした');
+//         }
+//     } else {
+//         exit('ERROR:画像がありません');
+//     }
+// } else {
+//     exit('error:画像が送信されていません');
+// }
+
+// if (isset($_FILES['item_image6']) && $_FILES['item_image6']['error'] == 0) {
+//     $uploaded_file_name5 = $_FILES['item_image6']['name']; //ファイル名を取得
+//     $temp_path = $_FILES['item_image6']['tmp_name']; //tmpフォルダの場所
+//     $directory_path = 'upload/'; //アップロード先ォルダ(自分で決める)
+//     $extension5 = pathinfo($uploaded_file_name5, PATHINFO_EXTENSION);
+//     $unique_name = date('YmdHis') . md5(session_id()) . "." . $extension;
+//     $filename_to_save6 = $directory_path . $unique_name;
+//     if (is_uploaded_file($temp_path)) {
+
+//         if (move_uploaded_file($temp_path, $filename_to_save6)) {
+//             chmod($filename_to_save6, 0644);
+//         } else {
+//             exit('ERROR:アップロードできませんでした');
+//         }
+//     } else {
+//         exit('ERROR:画像がありません');
+//     }
+// } else {
+//     exit('error:画像が送信されていません');
+// }
 
 try {
     $sql = 'UPDATE item_table SET  item_name = :item_name, item_image2=:item_image2, item_image3=:item_image3,item_image4=:item_image4,item_image5=:item_image5,item_image6=:item_image6,item_color=:item_color, size=:size,owner_id=:owner_id WHERE id = :id';

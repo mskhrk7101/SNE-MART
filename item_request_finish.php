@@ -23,16 +23,24 @@ check_session_id();
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>
-    <div>
-        <h2>交換依頼</h2>
-    </div>
-    <p>交換依頼が完了しました</p>
-    <a href="my_page.php">マイページへ</a>
+<br>
+<br>
+<br>
+<br>
 
+    <div style="display:flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;">
+        <h2>交換依頼</h2>
+
+        <p>交換依頼が完了しました</p>
+        <a href="my_page.php" style="border: solid 1px;">マイページへ</a>
+    </div>
     <div class="sub-top">
         <a href="index.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px"> <br> マーケット</a> <br>
 

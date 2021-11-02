@@ -15,6 +15,7 @@ if ($status == false) {
     $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
     $item_output = "";
     foreach ($result as $record) {
+        $item_output .= "{$record["item_status"]}";
         $item_output .= "<div class='size'>";
         $item_output .= "<img src='{$record["item_image"]}' width='300px'>";
         // $item_output .= "<div>メーカー:{$record["brand_name"]}</div>";
@@ -42,7 +43,7 @@ if ($status == false) {
     <link rel="stylesheet" href="style.css">
     <style>
         .select {
-            margin: 35px 0 0 100px;
+            margin: 35px 0 0 60px;
         }
 
         h3 {
@@ -95,22 +96,28 @@ if ($status == false) {
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <div class="menu">
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>
-    <form action="index2.php" method="POST" class="back">
-        <input type="image" name="back" alt="back" src="img/iconmonstr-arrow-left-circle-thin.png" width="50px" height="50px">
-    </form>
-    <h1>全商品一覧</h1>
-    <form action="index_act.php" method="POST">
-        <select name="row" id="row">
-            <option value="new">新しい順</option>
-            <option value="old">古い順</option>
-            <option value="english">A~Z</option>
-        </select>
-        <button type="submit">選択</button>
-    </form>
+    <div style="display: flex; position: fixed;top:0px;width:375px;box-sizing:border-box;background:white;z-index:500;">
+        <form action="index.php" method="POST">
+            <input type="image" name="back" alt="back" src="img/iconmonstr-arrow-left-circle-thin.png" width="50px" height="50px" style="margin-top: 20px;">
+        </form>
+    </div>
+    <div style="display: flex; position: fixed;top:70px;width:375px;box-sizing:border-box;background:white;z-index:500;">
+        <h1>全商品一覧</h1>
+        <form action="index_act.php" method="POST" class="select">
+            <select name="row" id="row">
+                <option value="new">新しい順</option>
+                <option value="old">古い順</option>
+                <option value="english">A~Z</option>
+            </select>
+            <button type="submit">選択</button>
+        </form>
+    </div>
+    <br><br><br><br><br><br>
+    <br><br>
     <div>
         <?= $item_output ?>
     </div>

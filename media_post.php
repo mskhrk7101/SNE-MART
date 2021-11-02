@@ -68,7 +68,7 @@ if ($status == false) {
 <body>
     <div class="head-menu">
         <a href="index.php">
-            <h3>ホリマニア</h3>
+            <h3>SNE MART</h3>
         </a>
         <!-- <div class="search">
             <input type="text" name="search" placeholder="検索" value="" size="20">
@@ -82,7 +82,7 @@ if ($status == false) {
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <div class="menu">
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>

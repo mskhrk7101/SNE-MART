@@ -33,6 +33,7 @@ if ($status == false) {
     $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
     $item_output = "";
     foreach ($result as $record) {
+        $item_output .= "<div >{$record["item_status"]}</div>";
         $item_output .= "<div class='size'>";
         $item_output .= "<img src='{$record["item_image"]}' width='300px'>";
         $item_output .= "<div style='width: 300px;'>{$record["brand_name"]}</div>";
@@ -111,7 +112,7 @@ if ($status == false) {
     <div class="top">
         <div class="head-menu">
             <a href="index.php">
-                <h3>ホリマニア</h3>
+                <h3>SNE MART</h3>
             </a>
             <!-- <div class="search">
                 <input type="text" name="search" placeholder="検索" value="" size="20">
@@ -135,7 +136,7 @@ if ($status == false) {
 
             <a href="user_edit.php" class="menu__item">アカウント編集</a>
             <a href="setting.php" class="menu__item">設定</a>
-            <a href="company2.php" class="menu__item">ホリマニアとは？</a>
+            <a href="company2.php" class="menu__item">SNE MARTとは？</a>
             <a href="help2.php" class="menu__item">ヘルプ</a>
             <a href="contact2.php" class="menu__item">お問い合わせ</a>
         </div>

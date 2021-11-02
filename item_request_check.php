@@ -63,7 +63,7 @@ if ($status == false) {
 </head>
 
 <body>
-    <form action="index.php" method="POST" class="back">
+    <form action="index2.php" method="POST" class="back">
         <input type="image" name="back" alt="back" src="img/iconmonstr-arrow-left-circle-thin.png" width="50px" height="50px">
     </form>
 
@@ -74,7 +74,7 @@ if ($status == false) {
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>
@@ -102,8 +102,12 @@ if ($status == false) {
             <div class="aaa"><?= $My_result["size"] ?></div>
         </div>
     </fieldset>
-    <a class="submit" href='item_request_check_act.php?Target_id=<?= $Target_result["id"] ?>&My_id=<?= $My_result["id"] ?>'>交換依頼</a>
+    <br>
 
+    <br>
+    <div style="text-align: center;">
+        <a class="submit" style="border: solid 1px;" href='item_request_check_act.php?Target_id=<?= $Target_result["id"] ?>&My_id=<?= $My_result["id"] ?> '>交換依頼</a>
+    </div>
     <br>
     <br>
     <br>

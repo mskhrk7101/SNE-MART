@@ -28,12 +28,12 @@
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company2.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company2.php" class="menu__item">SNE MARTとは？</a>
         <a href="help2.php" class="menu__item">ヘルプ</a>
         <a href="contact2.php" class="menu__item">お問い合わせ</a>
     </div>
     <div>
-        <h1>ホリマニアについて</h1>
+        <h1>SNE MARTについて</h1>
     </div>
     <div class="sub-top">
         <a href="index2.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px"> <br> マーケット</a> <br>

@@ -120,7 +120,6 @@ if ($status == false) {
             $offer_send .= "<img src='{$treaded_item["item_image"]}' width='300px' >";
             $offer_send .= "<input type='hidden' name='user_id' value='{$treaded_item["id"]} '>";
             $offer_send .= "<input type='hidden' name='treaditem_id' value='{$treaded_item["treaditem_id"]} '>";
-            $offer_send .= "<div>{$treaded_item["id"]} </div>";
             $offer_send .= "<div> 商品名 {$treaded_item["item_name"]} </div>";
             $offer_send .= "<div> メーカー {$treaded_item["brand_name"]} </div>";
             $offer_send .= "<div> サイズ {$treaded_item["size"]} </div>";
@@ -228,7 +227,7 @@ if ($status == false) {
     <div class="top">
         <div class="head-menu">
             <a href="index.php">
-                <h3>ホリマニア</h3>
+                <h3>SNE MART</h3>
             </a>
             <!-- <div class="search">
                 <input type="text" name="search" placeholder="検索" value="" size="20">
@@ -253,7 +252,7 @@ if ($status == false) {
             <br>
             <a href="user_edit.php" class="menu__item">アカウント編集</a>
             <a href="setting.php" class="menu__item">設定</a>
-            <a href="company.php" class="menu__item">ホリマニアとは？</a>
+            <a href="company.php" class="menu__item">SNE MARTとは？</a>
             <a href="help.php" class="menu__item">ヘルプ</a>
             <a href="contact.php" class="menu__item">お問い合わせ</a>
         </div>

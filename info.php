@@ -21,10 +21,30 @@ if ($status == false) {
     $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
     $output = "";
     foreach ($result as $record) {
+        $output .= "<br>";
         $output .= "<a href='offer.php?item_id={$record["id"]}'>✉️オファーが届いています。</a><br><br>";
     }
     unset($value);
 }
+
+// $sql = 'SELECT * FROM item_table WHERE owner_id = :id AND is_status = 3';
+// $stmt = $pdo->prepare($sql);
+// $stmt->bindValue(':id', $user_id, PDO::PARAM_INT);
+// $status = $stmt->execute();
+
+// if ($status == false) {
+//     $error = $stmt->errorInfo();
+//     echo json_encode(["error_msg" => "{$error[2]}"]);
+//     exit();
+// } else {
+//     $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
+//     $output1 = "";
+//     foreach ($result as $record) {
+//         $output1 .= "<br>";
+//         $output1 .= "<a href='offer.php?item_id={$record["id"]}'>✉️取引中の商品があります。</a><br><br>";
+//     }
+//     unset($value);
+// }
 
 $sql = 'SELECT * FROM users_table WHERE id = :id';
 $stmt = $pdo->prepare($sql);
@@ -65,7 +85,7 @@ if ($status == false) {
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company2.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company2.php" class="menu__item">SNE MARTとは？</a>
         <a href="help2.php" class="menu__item">ヘルプ</a>
         <a href="contact2.php" class="menu__item">お問い合わせ</a>
     </div>
@@ -74,7 +94,7 @@ if ($status == false) {
         <table>
 
             <?= $output ?>
-
+            <?= $output1 ?>
         </table>
     </div>
     <div class="sub-top">

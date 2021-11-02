@@ -15,6 +15,7 @@ if ($status == false) {
     $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
     $item_output = "";
     foreach ($result as $record) {
+        $item_output .= "{$record["item_status"]}";
         $item_output .= "<div class='size'>";
         $item_output .= "<img src='{$record["item_image"]}' width='300px'>";
         // $item_output .= "<div>メーカー:{$record["brand_name"]}</div>";
@@ -40,6 +41,7 @@ if ($status == false) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>マーケット ホーム</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/favicon.ico">
     <style>
         .select {
             margin: 35px 0 0 100px;
@@ -90,12 +92,13 @@ if ($status == false) {
 </head>
 
 <body>
+
     <div class="head-menu">
         <!-- <div class="search">
             <input type="text" name="search" placeholder="検索" value="" size="20">
         </div> -->
         <a href="index.php">
-            <h3>ホリマニア</h3>
+            <h3>SNE MART</h3>
         </a>
         <div class="log_in">
             <a href="log_in.php">ログイン/新規登録</a>
@@ -106,7 +109,7 @@ if ($status == false) {
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <div class="menu">
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>
@@ -129,6 +132,10 @@ if ($status == false) {
     </div>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
+
     <?= $item_output ?>
     <br>
     <br>

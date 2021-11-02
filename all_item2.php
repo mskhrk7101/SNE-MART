@@ -18,6 +18,7 @@ if ($status == false) {
     $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
     $item_output = "";
     foreach ($result as $record) {
+        $item_output .= "{$record["item_status"]}";
         $item_output .= "<div class='size'>";
         $item_output .= "<img src='{$record["item_image"]}' width='300px'>";
         // $item_output .= "<div>メーカー:{$record["brand_name"]}</div>";
@@ -100,16 +101,18 @@ if ($status == false) {
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company2.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company2.php" class="menu__item">SNE MARTとは？</a>
         <a href="help2.php" class="menu__item">ヘルプ</a>
         <a href="contact2.php" class="menu__item">お問い合わせ</a>
         <a href="item_resister.php" class="menu__item">管理ページ</a>
         <a href="launch_resister.php" class="menu__item">発売掲載管理</a>
     </div>
-    <form action="index.php" method="POST" class="back">
-        <input type="image" name="back" alt="back" src="img/iconmonstr-arrow-left-circle-thin.png" width="50px" height="50px" style="margin-top: 20px;">
-    </form>
-    <div style="display: flex; position: fixed;top:80px;width:375px;box-sizing:border-box;background:white;z-index:500;">
+    <div style="display: flex; position: fixed;top:0px;width:375px;box-sizing:border-box;background:white;z-index:500;">
+        <form action="index2.php" method="POST">
+            <input type="image" name="back" alt="back" src="img/iconmonstr-arrow-left-circle-thin.png" width="50px" height="50px" style="margin-top: 20px;">
+        </form>
+    </div>
+    <div style="display: flex; position: fixed;top:70px;width:375px;box-sizing:border-box;background:white;z-index:500;">
         <h1>全商品一覧</h1>
         <form action="index_act.php" method="POST" class="select">
             <select name="row" id="row">
@@ -121,6 +124,8 @@ if ($status == false) {
         </form>
     </div>
     <br><br><br><br><br><br>
+    <br>
+    <br>
 
     <div>
         <?= $item_output ?>

@@ -86,7 +86,7 @@ if ($status == false) {
                 サイズ：<?= $size ?><br>
             </fieldset>
             <br>
-            <input type="submit" value="出品" name="send" class="aa" style="width: 300px;">
+            <input type="submit" value="出品" name="send" class="aa" style="width: 330px;">
         </div>
     </form>
     <div class="sub-top">

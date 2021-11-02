@@ -78,7 +78,7 @@ if ($status == false) {
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <div class="menu">
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>

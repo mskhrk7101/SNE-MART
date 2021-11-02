@@ -13,13 +13,21 @@
     <form action="market_tread.php" method="POST" class="back">
         <input type="image" name="back" alt="back" src="img/iconmonstr-arrow-left-circle-thin.png" width="50px" height="50px">
     </form>
-    <div>
+
+    <br>
+    <br>
+    <br>
+
+    <div style="display:flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;">
         <h1>出品完了しました。</h1>
         <h2>Thanks!!!</h2>
+        <br>
+        <a href="my_page.php" style="border: solid 1px;">マイページへ</a>
     </div>
-    <form action="my_page.php" method="POST" class="my_page">
-        <input type="submit" name="my_page" value="マイページへ" width="50px" height="50px">
-    </form>
+
     <div class="sub-top">
         <a href="index.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px"> <br> マーケット</a> <br>
 

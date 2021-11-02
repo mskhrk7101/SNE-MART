@@ -30,7 +30,7 @@
             <input type="text" name="search" placeholder="検索" value="" size="20">
         </div> -->
         <a href="index.php">
-            <h3>ホリマニア</h3>
+            <h3>SNE MART</h3>
         </a>
         <div class="log_in">
             <a href="log_in.php">ログイン/新規登録</a>
@@ -41,7 +41,7 @@
         <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <div class="menu">
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>
@@ -50,7 +50,7 @@
     <br>
     <br>
     <div>
-        <h1>ホリマニアについて</h1>
+        <h1>SNE MARTについて</h1>
     </div>
     <div class="sub-top">
         <a href="index.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px"> <br> マーケット</a> <br>

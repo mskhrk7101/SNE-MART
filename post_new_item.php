@@ -117,7 +117,7 @@ if ($status == false) {
 
 <body>
     <div style="display: flex;">
-        <form action="post_new_kinds.php" method="POST" class="back">
+        <form action="post_status.php" method="POST" class="back">
             <input type="image" name="back" alt="back" src="img/iconmonstr-arrow-left-circle-thin.png" width="50px" height="50px">
         </form>
         <form action="contact.php" method="POST" class="contact" style="margin:20px 0 0 200px;">

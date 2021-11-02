@@ -81,7 +81,7 @@ if ($status == false) {
 <body>
     <div class="head-menu">
         <a href="index.php">
-            <h3>ホリマニア</h3>
+            <h3>SNE MART</h3>
         </a>
         <!-- <div class="search">
             <input type="text" name="search" placeholder="検索" value="" size="20">
@@ -100,7 +100,7 @@ if ($status == false) {
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>
@@ -127,7 +127,7 @@ if ($status == false) {
     <div class="sub-top">
         <a href="index2.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px"> <br> マーケット</a> <br>
 
-        <a href="media2.php" style="background-color: #a9a9a9;"><img alt=" media" src="img/safari_logo_icon_144917.png" width="50px" height="50px"> <br> メディア</a> <br>
+        <a href="media2.php" ><img alt=" media" src="img/safari_logo_icon_144917.png" width="50px" height="50px"> <br> メディア</a> <br>
 
         <a href="post_status.php"><img alt="post_status" src="img/iconmonstr-plus-circle-thin.png" width="50px" height="50px"> <br> 出品</a> <br>
 

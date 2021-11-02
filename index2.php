@@ -23,6 +23,7 @@ if ($status == false) {
     $result = $stmt->fetchALL(PDO::FETCH_ASSOC);
     $item_output = "";
     foreach ($result as $record) {
+        $item_output .= "{$record["item_status"]}";
         $item_output .= "<div class='size'>";
         $item_output .= "<img src='{$record["item_image"]}' width='300px'>";
         // $item_output .= "<div>メーカー:{$record["brand_name"]}</div>";
@@ -109,7 +110,7 @@ if ($status == false) {
             <input type="text" name="search" placeholder="検索" value="" size="20">
         </div> -->
         <a href="index.php">
-            <h3>ホリマニア</h3>
+            <h3>SNE MART</h3>
         </a>
         <div class="info">
             <a href="info.php">🔔<?= $request_count[0] ?>件</a>
@@ -124,14 +125,17 @@ if ($status == false) {
     </div>
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
-        <a href="company2.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company2.php" class="menu__item">SNE MARTとは？</a>
         <a href="help2.php" class="menu__item">ヘルプ</a>
         <a href="contact2.php" class="menu__item">お問い合わせ</a>
     </div>
     <br>
     <br>
     <br>
-
+    <br>
+    <br>
+    <br>
+    
     <div style="display: flex; position: fixed;top: 60px;width:375px;box-sizing:border-box;background:white;z-index:500;">
         <h1>出品商品</h1>
         <form action="index_act.php" method="POST" class="select">

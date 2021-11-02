@@ -36,7 +36,7 @@ $user_id = $_SESSION['user_id'];
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company2.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company2.php" class="menu__item">SNE MARTとは？</a>
         <a href="help2.php" class="menu__item">ヘルプ</a>
         <a href="contact2.php" class="menu__item">お問い合わせ</a>
     </div>

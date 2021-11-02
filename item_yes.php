@@ -107,7 +107,7 @@ if ($status == false) {
             <input type="text" name="search" placeholder="検索" value="" size="20">
         </div> -->
         <a href="index.php">
-            <h3>ホリマニア</h3>
+            <h3>SNE MART</h3>
         </a>
         <div class="info">
             <a href="info.php">🔔<?= $request_count[0] ?>件</a>
@@ -123,19 +123,26 @@ if ($status == false) {
     <div class="menu">
         <a href="user_edit.php" class="menu__item">アカウント編集</a>
         <a href="setting.php" class="menu__item">設定</a>
-        <a href="company.php" class="menu__item">ホリマニアとは？</a>
+        <a href="company.php" class="menu__item">SNE MARTとは？</a>
         <a href="help.php" class="menu__item">ヘルプ</a>
         <a href="contact.php" class="menu__item">お問い合わせ</a>
     </div>
     <div>
         <h1>オファー承諾しました。</h1>
         <h2>Thanks!!!</h2>
-        <h3>送り先</h3>
-        <p>○県○市○区○○ ○丁目○-○-○○○</p>
+        <h3>送り先</h3><br>
+        <div style="text-align: center;">
+            <div>4日以内にお送りください。</div>
+            <br>
+            <div>○県○市○区○○ ○丁目○-○-○○○</div>
+        </div>
     </div>
-    <form action="offer.php" method="POST" class="my_page">
-        <input type="submit" name="my_page" value="マイページへ" width="50px" height="50px">
-    </form>
+    <br>
+    <div>
+        <form action="offer.php" method="POST" class="my_page">
+            <input type="submit" name="my_page" value="マイページへ" width="50px" height="50px" style="margin-left: 150px;">
+        </form>
+    </div>
     <div class="sub-top">
         <a href="index2.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px"> <br> マーケット</a> <br>
 
