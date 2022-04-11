@@ -35,6 +35,9 @@ flex-direction: column;
   z-index:500;
   border-top: solid 3px;
 }
+
+
+
 .top{
   position: fixed;
 	top: 0;
@@ -67,12 +70,12 @@ button{
 }
 .log_in {
 margin: 35px 0 0 50px;
-          }
-          .log_out {
-margin: 37px 0 0 10px;
-          }
+}
+.log_out {
+margin: 37px 15px 0 0;
+}
 .info{
-  margin: 35px 0 0 60px;
+  margin: 35px 10px 0 50px;
 }
 .memu2 {
  /* margin: 10px auto 0 auto; */

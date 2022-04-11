@@ -66,6 +66,7 @@ if ($status == false) {
                             <option value="">項目を選択してください</option>
                             <option value="アカウントについて">アカウントについて</option>
                             <option value="発送方法について">発送方法について</option>
+                            <option value="出品したいスニーカーがない">出品したいスニーカーがない</option>
                             <option value="退会について">退会について</option>
                             <option value="その他">その他</option>
                         </select>
@@ -82,15 +83,15 @@ if ($status == false) {
         <button type="submit">確認画面へ</button>
     </div>
     <div class="sub-top">
-        <a href="index2.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px"> <br> マーケット</a> <br>
+        <a href="index.php"><img alt="market" src="img/iconmonstr-shopping-cart-thin.png" width="50px" height="50px" style="padding-left: 20px;"> <br> マーケット</a>
 
-        <a href="media2.php"><img alt="media" src="img/safari_logo_icon_144917.png" width="50px" height="50px"> <br> メディア</a> <br>
+        <a href="media.php"><img alt="media" src="img/safari_logo_icon_144917.png" width="50px" height="50px"> <br> メディア</a>
 
-        <a href="post_status.php"><img alt="post_status" src="img/iconmonstr-plus-circle-thin.png" width="50px" height="50px"> <br> 出品</a> <br>
+        <a href="post_status.php"><img alt="post_status" src="img/iconmonstr-plus-circle-thin.png" width="50px" height="50px"> <br> 出品</a>
 
-        <a href="like.php"><img alt="like" src="img/iconmonstr-heart-thin.png" width="50px" height="50px"> <br> お気に入り</a> <br>
+        <a href="like.php"><img alt="like" src="img/iconmonstr-heart-thin.png" width="50px" height="50px" style="padding-left: 10px;"> <br> お気に入り</a>
 
-        <a href="my_page.php"><img alt="my_page" src="img/iconmonstr-user-male-thin.png" width="50px" height="50px"> <br>マイページ</a> <br>
+        <a href="my_page.php"><img alt="my_page" src="img/iconmonstr-user-male-thin.png" width="50px" height="50px"> <br>マイページ</a>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script>
